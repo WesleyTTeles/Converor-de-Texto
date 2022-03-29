@@ -2,10 +2,24 @@
 let input = 0;
 let upperCase = 0;
 let lowerCase = 0;      
+let textCopy = 0
 
 function showWarning(mensagem){
 document.querySelector('.warning').innerHTML = mensagem;
 }
+
+
+//Função para copiar o Texto depois da conversão
+function copyText(){
+    textCopy = document.querySelector('#area');
+    textCopy.select();
+    textCopy.setSelectionRange(0, 99999);
+    textCopy = document.execCommand("copy");
+}
+
+// Essa função vai preveni a ação de envio do formulário
+document.querySelector('#btn--copy').addEventListener('click', (event) =>{
+    event.preventDefault();});
 
 // Essa função vai preveni a ação de envio do formulário
 document.querySelector('#btn--upercase').addEventListener('click', (event) =>{

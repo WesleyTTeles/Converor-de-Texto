@@ -7,11 +7,12 @@ Projeto criado no intuito de estudar cada vez mais as linguagens, pretendo esta 
 
 - Receber um Texto qualquer do usuário através de um input.
 - Converter esse texto para Caixa alta ou Baixa conforme o usuário solicite.
+- Botão Criado para Copiar todo texto quando o usuario concluir a conversão.
 
 
 [Oque pretendo implantar]
 
-- Criar botão para copiar
+
 - Deixar o mesmo campo de input seja o de output
 - Ter suporte para o Safari
 
