@@ -3,11 +3,11 @@ let input = 0;
 let upperCase = 0;
 let lowerCase = 0;      
 let textCopy = 0
+let area = 0
 
 function showWarning(mensagem){
 document.querySelector('.warning').innerHTML = mensagem;
 }
-
 
 //Função para copiar o Texto depois da conversão
 function copyText(){
@@ -19,7 +19,17 @@ function copyText(){
 
 // Essa função vai preveni a ação de envio do formulário
 document.querySelector('#btn--copy').addEventListener('click', (event) =>{
-    event.preventDefault();});
+    event.preventDefault();
+
+    area = document.querySelector('#area').value;
+
+    if ( area !== ''){
+        showWarning('Texto Copiado com Sucesso!');
+        }
+        else {
+        document.querySelector('.warning').innerHTML = 'Digite Alguma coisa.'
+        }
+});
 
 // Essa função vai preveni a ação de envio do formulário
 document.querySelector('#btn--upercase').addEventListener('click', (event) =>{
