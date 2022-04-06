@@ -1,9 +1,11 @@
-//criação de variáveis
+//criações de variáveis
 let input = 0;
 let upperCase = 0;
-let lowerCase = 0;      
+let lowerCase = 0;
+let firstLetterUpper = 0      
 let textCopy = 0
 let area = 0
+
 
 function showWarning(mensagem){
 document.querySelector('.warning').innerHTML = mensagem;
@@ -31,6 +33,8 @@ document.querySelector('#btn--copy').addEventListener('click', (event) =>{
         }
 });
 
+// >>>>>>>>>>>> Tranformar Tudo em Maisuculo <<<<<<<<<<<<<<<<<
+
 // Essa função vai preveni a ação de envio do formulário
 document.querySelector('#btn--upercase').addEventListener('click', (event) =>{
     event.preventDefault();
@@ -53,6 +57,8 @@ document.querySelector('#btn--upercase').addEventListener('click', (event) =>{
     document.querySelector('#area').innerHTML = upperCase;
 });
 
+// >>>>>>>>>>>> Tranformar Tudo em Menusculo <<<<<<<<<<<<<<<<<
+
 document.querySelector('#btn--lowercase').addEventListener('click', (event) =>{
     event.preventDefault();
 
@@ -72,3 +78,32 @@ document.querySelector('#btn--lowercase').addEventListener('click', (event) =>{
     document.querySelector('.warning').innerHTML = 'Digite Alguma coisa.'
     }
 });
+
+// >>>>>>>>>>>> Primeira Letra maiusuclas de cada texto <<<<<<<<<<<<<<<<<
+
+document.querySelector('#btn--firstletterupper').addEventListener('click', (event) =>{
+    event.preventDefault();
+
+    //Variavel criada para pegar o valor que o usuário digitou no input.
+    input = document.querySelector('#text').value;
+        
+    /*
+    Pegamos a primeira letra usando input[0], transformamos em maiúscula, pegamos 
+    também o resto da string menos a primeira letra, usando slice(1) e transformamos em 
+    minúscula, depois concatenamos tudo.
+    */
+    firstLetterUpper = (input[0].toUpperCase() + 
+        input.slice(1).toLowerCase());
+
+    //Resultado da conversao
+    document.querySelector('#area').innerHTML = firstLetterUpper;
+
+    if ( input !== ''){
+    showWarning('Texto Transformado com Sucesso!');
+    }
+    else {
+    document.querySelector('.warning').innerHTML = 'Digite Alguma coisa.'
+    }
+});
+
+

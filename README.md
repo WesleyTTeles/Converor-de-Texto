@@ -15,6 +15,7 @@ Projeto criado no intuito de estudar cada vez mais as linguagens, pretendo esta 
 
 - Deixar o mesmo campo de input seja o de output
 - Ter suporte para o Safari
+- Bloquear campo area para digitação
 
 
 [Stack Utilizadas]

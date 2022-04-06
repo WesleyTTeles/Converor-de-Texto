@@ -12,24 +12,23 @@
 <body>
     <main>
         <header>
-            <h1>Bem Vindo a New Code Convert!</h1>
-            <span>Digite seu texto abaixo e converta como desejar.</span>
+            <h1>Bem Vindo a New Code</h1>
+            <span>Facilite seu trabalho convertendo seus textos aqui.</span>
         </header>
         <form class="convert">
-            <input id="text" type="text" name="texto">
-            <textarea id="area"></textarea>
+            <input id="text" type="text" name="texto" placeholder="Digite Seu texto aqui">
+            <textarea id="area" readonly=""></textarea>
             <div class="buttons">
                 <button id="btn--upercase">Caixa Alta</button>
                 <button id="btn--lowercase">Caixa Baixa</button>
+                <button id="btn--firstletterupper">Primeira Letra Maiuscula</button>
                 <button id="btn--copy" onclick="copyText()">Copiar Texto</button>
             </div>
         </form>
         <div class="warning"></div>
         <div class="attention">>> Recomendamos o uso pelo Google Chrome <<</div>
-    </main>
-
+    </main>   
     <script src="assets/js/script.js"></script>
     
-
 </body>
 </html>
