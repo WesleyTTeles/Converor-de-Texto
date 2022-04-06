@@ -6,17 +6,15 @@ Projeto criado no intuito de estudar cada vez mais as linguagens, pretendo esta 
 [Estrutura do Projeto]
 
 - Receber um Texto qualquer do usuário através de um input.
-- Converter esse texto para Caixa alta ou Baixa conforme o usuário solicite.
+- Botão para Converter o texto para Caixa alta ou Baixa conforme o usuário solicite.
 - Botão Criado para Copiar todo texto quando o usuario concluir a conversão.
-
-
-[Oque pretendo implantar]
-
-
-- Deixar o mesmo campo de input seja o de output
-- Ter suporte para o Safari
+- Botão para Converter a primeira letra do texto em maiúsculo.
 - Bloquear campo area para digitação
 
+![alt text](assets/img/Screenshot.png)
+
+[Ajustes Futuro]
+- Ter suporte para o Safari
 
 [Stack Utilizadas]
 
@@ -27,4 +25,10 @@ Projeto criado no intuito de estudar cada vez mais as linguagens, pretendo esta 
 
 [Como Utilizar]
 
-- Arraste o Arquivo HTML para o navegador de sua preferencia exceto SAFARI e divirta-se com a NewCode Convert
+- Arraste o Arquivo HTML para o navegador de sua preferencia exceto SAFARI e divirta-se com a NewCode
+- Digite seu Texto no Campo "Digite seu Texto aqui"
+- Clieque no botão que deseja converter:
+    Caixa Alta
+    Caixa Baixa
+    Primeira Letra Maiúscula
+- Por fim clique no botão "Copiar Texto" e cole onde desejar.
